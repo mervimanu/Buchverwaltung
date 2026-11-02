@@ -5,7 +5,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-/** Formulaire reutilisable pour l'ajout et la modification. */
+/** Wiederverwendbares Formular zum Hinzufuegen und Bearbeiten eines Buches. */
 public class BuchFormular extends JPanel {
     private JTextField titelFeld;
     private JTextField autorFeld;
@@ -16,11 +16,11 @@ public class BuchFormular extends JPanel {
     private JCheckBox gelesenFeld;
 
     public BuchFormular() {
-        // TODO Construire les champs avec BorderLayout, GridLayout ou BoxLayout.
+        // TODO Eingabefelder mit BorderLayout, GridLayout oder BoxLayout anordnen.
     }
 
-    /** Convertir les saisies; signaler les erreurs de nombres par IllegalArgumentException.
-     * L'identifiant est fourni par le controleur, jamais saisi par l'utilisateur.
+    /** Eingaben umwandeln; ungueltige Zahlen durch IllegalArgumentException melden.
+     * Die ID wird vom Controller vorgegeben und nicht vom Benutzer eingegeben.
      */
     public Buch eingabenLesen(int buchId) throws IllegalArgumentException {
         throw new UnsupportedOperationException("TODO");

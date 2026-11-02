@@ -8,17 +8,17 @@ import java.util.Optional;
 import javax.swing.JFrame;
 import javax.swing.JList;
 
-/** Vue Swing : liste des titres, formulaire et boutons des six cas d'utilisation. */
+/** Swing-Ansicht mit Titelliste, Formular und Schaltflaechen fuer die sechs Anwendungsfaelle. */
 public class Hauptfenster extends JFrame {
     private JList<Buch> buchListe;
     private BuchFormular formular;
 
     public Hauptfenster() {
-        // TODO Construire l'interface avec BorderLayout, GridLayout ou BoxLayout.
-        // TODO Afficher le titre via un renderer de JList, pas l'adresse de l'objet.
+        // TODO Oberflaeche mit BorderLayout, GridLayout oder BoxLayout aufbauen.
+        // TODO Buchtitel mit einem JList-Zellrenderer anzeigen.
     }
 
-    /** Connecter les boutons et la selection aux methodes du controleur. */
+    /** Schaltflaechen und Listenauswahl mit den Methoden des Controllers verbinden. */
     public void controllerVerbinden(BuchController controller) {
         throw new UnsupportedOperationException("TODO");
     }
@@ -43,7 +43,7 @@ public class Hauptfenster extends JFrame {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** JFileChooser; Optional.empty() si l'utilisateur annule. */
+    /** Dateiauswahl mit JFileChooser; bei Abbruch Optional.empty() zurueckgeben. */
     public Optional<Path> dateiZumSpeichernWaehlen() {
         throw new UnsupportedOperationException("TODO");
     }

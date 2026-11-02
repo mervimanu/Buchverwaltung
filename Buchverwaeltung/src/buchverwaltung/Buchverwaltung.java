@@ -1,9 +1,9 @@
 package buchverwaltung;
 
-/** Point d'entree : assembler le modele, la vue, la persistance et le controleur. */
+/** Programmeinstieg: Modell, Ansicht, Dateiverwaltung und Controller zusammenstellen. */
 public class Buchverwaltung {
     public static void main(String[] args) {
-        // TODO Creer et connecter les composants sur le thread Swing (EventQueue.invokeLater).
-        throw new UnsupportedOperationException("TODO: demarrage");
+        // TODO Komponenten im Swing-Ereignisthread erstellen und verbinden (EventQueue.invokeLater).
+        throw new UnsupportedOperationException("TODO: Programmstart");
     }
 }

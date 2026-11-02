@@ -5,7 +5,7 @@ import buchverwaltung.model.BuchValidierung;
 import buchverwaltung.persistence.DateiVerwaltung;
 import buchverwaltung.view.Hauptfenster;
 
-/** Coordonne les actions; ne contient ni composants Swing ni format de fichier. */
+/** Koordiniert Benutzeraktionen; enthaelt keine Swing-Komponenten und kein Dateiformat. */
 public class BuchController {
     private final BuchlistenModell modell;
     private final Hauptfenster ansicht;
@@ -32,12 +32,12 @@ public class BuchController {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Lire le formulaire, attribuer un ID, valider, ajouter, rafraichir. */
+    /** Formular auslesen, ID vergeben, Daten pruefen, Buch hinzufuegen und Ansicht aktualisieren. */
     public void buchHinzufuegen() {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Exiger une selection, conserver son ID, valider et modifier. */
+    /** Auswahl pruefen, ID beibehalten, Eingaben validieren und Buch aendern. */
     public void buchAendern() {
         throw new UnsupportedOperationException("TODO");
     }
@@ -46,13 +46,13 @@ public class BuchController {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Choisir un fichier, gerer l'annulation et afficher les erreurs IOException. */
+    /** Datei auswaehlen, Abbruch behandeln und IOException als Fehlermeldung anzeigen. */
     public void speichern() {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Charger et valider tous les livres avant de remplacer le modele.
-     * En cas d'erreur ou d'annulation, conserver la collection actuelle.
+    /** Alle Buecher laden und pruefen, bevor die Sammlung ersetzt wird.
+     * Bei Fehlern oder Abbruch bleibt die aktuelle Sammlung erhalten.
      */
     public void laden() {
         throw new UnsupportedOperationException("TODO");

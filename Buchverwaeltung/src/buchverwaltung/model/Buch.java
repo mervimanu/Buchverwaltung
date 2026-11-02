@@ -1,10 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package buchverwaltung.model;
 
 /**
+ * Daten eines Buches mit stabiler ID und bearbeitbaren Attributen.
  *
  * @author nsame
  */
@@ -78,7 +75,7 @@ public class Buch {
     public void setGelesen(boolean gelesen) {
         this.gelesen = gelesen;
     }
- 
+
 public String getTitel() {
     return titel;
 }
@@ -90,6 +87,6 @@ public void setTitel(String titel) {
     public int getBuchId() {
         return buchId;
     }
-   
-    
+
+
 }

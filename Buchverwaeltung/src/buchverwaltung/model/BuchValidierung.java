@@ -1,8 +1,8 @@
 package buchverwaltung.model;
 
-/** Regles metier : titre obligatoire, nombres coherents, prix fini et non negatif. */
+/** Fachliche Regeln: Titel erforderlich, sinnvolle Zahlen, endlicher und nicht negativer Preis. */
 public class BuchValidierung {
-    /** Lever IllegalArgumentException avec un message comprehensible si invalide. */
+    /** Bei ungueltigen Daten eine IllegalArgumentException mit verstaendlicher Meldung ausloesen. */
     public void pruefen(Buch buch) throws IllegalArgumentException {
         throw new UnsupportedOperationException("TODO");
     }

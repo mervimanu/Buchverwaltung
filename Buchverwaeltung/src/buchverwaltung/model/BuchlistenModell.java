@@ -3,16 +3,16 @@ package buchverwaltung.model;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Collection metier, independante de Swing et du format des fichiers. */
+/** Verwaltet die Buchsammlung unabhaengig von Swing und dem Dateiformat. */
 public class BuchlistenModell {
     private final List<Buch> buecher = new ArrayList<>();
 
-    /** Ajouter un livre avec un identifiant unique. */
+    /** Ein Buch mit einer eindeutigen ID hinzufuegen. */
     public void buchHinzufuegen(Buch buch) {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Remplacer les attributs du livre identifie, en conservant son identifiant. */
+    /** Attribute des angegebenen Buches ersetzen und dessen ID beibehalten. */
     public void buchAendern(int buchId, Buch neueDaten) {
         throw new UnsupportedOperationException("TODO");
     }
@@ -21,17 +21,17 @@ public class BuchlistenModell {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Renvoyer une copie de la liste pour proteger la collection interne. */
+    /** Eine Kopie der Liste zurueckgeben, um die interne Sammlung zu schuetzen. */
     public List<Buch> getBuecher() {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Remplacer la collection apres un chargement complet et valide. */
+    /** Sammlung nach vollstaendigem Laden und erfolgreicher Pruefung ersetzen. */
     public void buecherErsetzen(List<Buch> buecher) {
         throw new UnsupportedOperationException("TODO");
     }
 
-    /** Calculer un identifiant inutilise, y compris apres chargement. */
+    /** Eine freie ID ermitteln, auch nach dem Laden einer Datei. */
     public int naechsteBuchId() {
         throw new UnsupportedOperationException("TODO");
     }
