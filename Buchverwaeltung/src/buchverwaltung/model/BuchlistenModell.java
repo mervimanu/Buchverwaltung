@@ -1,30 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package buchverwaltung.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
+/** Collection metier, independante de Swing et du format des fichiers. */
 public class BuchlistenModell {
+    private final List<Buch> buecher = new ArrayList<>();
 
-    private ArrayList<Buch> buecher;
-
-    public BuchlistenModell() {
-        buecher = new ArrayList<>();
+    /** Ajouter un livre avec un identifiant unique. */
+    public void buchHinzufuegen(Buch buch) {
+        throw new UnsupportedOperationException("TODO");
     }
 
-public void buchHinzufuegen(Buch buch) {
-    buecher.add(buch);
-}
+    /** Remplacer les attributs du livre identifie, en conservant son identifiant. */
+    public void buchAendern(int buchId, Buch neueDaten) {
+        throw new UnsupportedOperationException("TODO");
+    }
 
-public void buchEntfernen(Buch buch) {
-    buecher.remove(buch);
-}
+    public void buchEntfernen(int buchId) {
+        throw new UnsupportedOperationException("TODO");
+    }
 
-public ArrayList<Buch> getBuecher() {
-    return new ArrayList<>(buecher);
-}
+    /** Renvoyer une copie de la liste pour proteger la collection interne. */
+    public List<Buch> getBuecher() {
+        throw new UnsupportedOperationException("TODO");
+    }
 
+    /** Remplacer la collection apres un chargement complet et valide. */
+    public void buecherErsetzen(List<Buch> buecher) {
+        throw new UnsupportedOperationException("TODO");
+    }
+
+    /** Calculer un identifiant inutilise, y compris apres chargement. */
+    public int naechsteBuchId() {
+        throw new UnsupportedOperationException("TODO");
+    }
 }
