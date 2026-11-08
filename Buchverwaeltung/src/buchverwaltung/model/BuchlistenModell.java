@@ -9,30 +9,84 @@ public class BuchlistenModell {
 
     /** Ein Buch mit einer eindeutigen ID hinzufuegen. */
     public void buchHinzufuegen(Buch buch) {
-        throw new UnsupportedOperationException("TODO");
+        if (buch == null) {
+        return;
     }
+      for (int i = 0; i < buecher.size(); i++) {
+          if (buecher.get(i).getBuchId() == buch.getBuchId()) {
+              return;
+        }
+    }
+
+    buecher.add(buch);
+}   
 
     /** Attribute des angegebenen Buches ersetzen und dessen ID beibehalten. */
     public void buchAendern(int buchId, Buch neueDaten) {
-        throw new UnsupportedOperationException("TODO");
+        if (neueDaten == null) {
+        return;
     }
+     for (int i = 0; i < buecher.size(); i++) {
+
+        Buch buch = buecher.get(i);
+
+        if (buch.getBuchId() == buchId) {
+
+            buch.setTitel(neueDaten.getTitel());
+            buch.setAutor(neueDaten.getAutor());
+            buch.setErscheinungsjahr(neueDaten.getErscheinungsjahr());
+            buch.setSeitenzahl(neueDaten.getSeitenzahl());
+            buch.setVerlag(neueDaten.getVerlag());
+            buch.setPreis(neueDaten.getPreis());
+            buch.setGelesen(neueDaten.isGelesen());
+
+            return;
+        }
+    }
+}   
 
     public void buchEntfernen(int buchId) {
-        throw new UnsupportedOperationException("TODO");
+       for (int i = 0; i < buecher.size(); i++) {
+
+        Buch buch = buecher.get(i);
+
+        if (buch.getBuchId() == buchId) {
+
+            buecher.remove(i);
+
+            return;
+        }
+    }
     }
 
     /** Eine Kopie der Liste zurueckgeben, um die interne Sammlung zu schuetzen. */
     public List<Buch> getBuecher() {
-        throw new UnsupportedOperationException("TODO");
+        return new ArrayList<>(buecher);
+
     }
 
     /** Sammlung nach vollstaendigem Laden und erfolgreicher Pruefung ersetzen. */
-    public void buecherErsetzen(List<Buch> buecher) {
-        throw new UnsupportedOperationException("TODO");
+    public void buecherErsetzen(List<Buch> neueBuecher) {
+        if (neueBuecher == null) {
+        return;
+    }
+
+    this.buecher.clear();
+
+    this.buecher.addAll(neueBuecher);
     }
 
     /** Eine freie ID ermitteln, auch nach dem Laden einer Datei. */
     public int naechsteBuchId() {
-        throw new UnsupportedOperationException("TODO");
+       int maxId = 0;
+
+    for (int i = 0; i < buecher.size(); i++) {
+
+        Buch buch = buecher.get(i);
+
+        if (buch.getBuchId() > maxId) {
+            maxId = buch.getBuchId(); 
     }
 }
+ return maxId + 1;
+    }
